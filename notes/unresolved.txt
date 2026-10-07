@@ -3,13 +3,8 @@
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
 GetLocation(unsigned char, char (&) [255]) | cardbandits.so
-IsScreenTouched() | cardbandits.so
 t_i_l() | cardbandits.so
 VideoClass::RefreshStaticVB() | cardbandits.so
 SystemClass::FlushKB() | cardbandits.so
 HighScoresManager::PlayerName(int) | cardbandits.so
 USBIO::FoundUSB() | cardbandits.so
-GameClass::GameClass() | cardbandits.so
-GameClass::~GameClass() | cardbandits.so
-typeinfo for GameClass | cardbandits.so
-voice_ramp_volume | cardbandits.so
