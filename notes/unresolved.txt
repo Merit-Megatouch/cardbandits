@@ -1,0 +1,122 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+GetLocation(unsigned char, char (&) [255]) | cardbandits.so
+open_sprfli(char const*) | cardbandits.so
+close_sprfli(char const*) | cardbandits.so
+GetTouchCoord(int*, int*, int*) | cardbandits.so
+GetHelpFileName(char (&) [255], char const*, Locale::Languages, char const*) | cardbandits.so
+IsScreenTouched() | cardbandits.so
+get_sprfli_bitmap(char const*) | cardbandits.so
+next_sprfli_frame(char const*, int) | cardbandits.so
+get_sprfli_palette(char const*) | cardbandits.so
+MeritthonDisplayRound(int, int, int, unsigned long) | cardbandits.so
+t_i_l() | cardbandits.so
+u_m_m_s(char const*, char*, char*, unsigned int) | cardbandits.so
+QueFlush(bool) | cardbandits.so
+Translator::LoadTranslations(xml_gameinfo::GameIds) | cardbandits.so
+Translator::SetCurrentLanguage(Locale::Languages) | cardbandits.so
+VideoClass::RefreshStaticVB() | cardbandits.so
+WorldClass::FrameNumber(Bitmap*) | cardbandits.so
+WorldClass::WaitOnFrame(unsigned long, bool) | cardbandits.so
+WorldClass::PlayDeltaAnim(char*, int, int, unsigned long, unsigned long, char*, unsigned short, unsigned char, bool) | cardbandits.so
+WorldClass::CopyCompBitmap(Bitmap*, int, int, int, int, int, int, int, int, int, int, bool) | cardbandits.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | cardbandits.so
+WorldClass::SetBack(Bitmap*, int) | cardbandits.so
+WorldClass::SetBack(char const*, int) | cardbandits.so
+WorldClass::SetBack(short) | cardbandits.so
+WorldClass::ShowAll() | cardbandits.so
+WorldClass::GetFrame(Bitmap*, int) | cardbandits.so
+WorldClass::DeleteBmp(Bitmap*, unsigned char) | cardbandits.so
+WorldClass::NextFrame(unsigned char, unsigned char, bool, bool, bool, bool) | cardbandits.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | cardbandits.so
+WorldClass::WorldClass() | cardbandits.so
+SystemClass::FlushKB() | cardbandits.so
+system_info::SystemInfo::GetInstance() | cardbandits.so
+system_info::SystemInfo::IsPlatformGameTime() | cardbandits.so
+system_info::Get_Motherboard_Type() | cardbandits.so
+ChainRestClass::GetPicFileName(xml_gameinfo::GameIds, int) | cardbandits.so
+xml_gamerandom::PICRAND_record::PICRAND_record() | cardbandits.so
+xml_gamerandom::PICRAND_record::~PICRAND_record() | cardbandits.so
+xml_gamerandom::PICRAND_record::operator=(xml_gamerandom::PICRAND_record const&) | cardbandits.so
+HighScoresManager::PlayerName(int) | cardbandits.so
+abstract_metadata::abstract_metadata(char const*, db_common_field_def const*, int, char const*, db_common_index_def const*, int, char const* const*, int, bool) | cardbandits.so
+abstract_xml_record::AdjustTimeFields(int, long) | cardbandits.so
+abstract_xml_record::abstract_xml_record(abstract_xml_record const&) | cardbandits.so
+abstract_xml_record::abstract_xml_record() | cardbandits.so
+abstract_xml_record::~abstract_xml_record() | cardbandits.so
+RandomizedArrayClass::GetNextValue(int) | cardbandits.so
+RandomizedArrayClass::RandomizedArrayClass(xml_gamerandom::PICRAND_record*, int, unsigned char, unsigned short*) | cardbandits.so
+RandomizedArrayClass::~RandomizedArrayClass() | cardbandits.so
+List::Push(Group*) | cardbandits.so
+List::Clear(unsigned char) | cardbandits.so
+List::IsEmpty() | cardbandits.so
+List::List(List*) | cardbandits.so
+Books::Credits(xml_gameinfo::GameIds, enums::Span) | cardbandits.so
+Books::Instance() | cardbandits.so
+Group::Signal(Group::SpriteSignalType) | cardbandits.so
+Group::Signal(SpriteSignal*) | cardbandits.so
+Group::Message(Group::SpriteSignalType) | cardbandits.so
+Group::Message(SpriteSignal*) | cardbandits.so
+USBIO::FoundUSB() | cardbandits.so
+Bitmap::DeCompress() | cardbandits.so
+Bitmap::ReplaceTrans(bool) | cardbandits.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | cardbandits.so
+Bitmap::Scale(int, int, unsigned char) | cardbandits.so
+Bitmap::GreyBmp() | cardbandits.so
+Bitmap::LoadJPEG(char*, int, int, unsigned char) | cardbandits.so
+EventO::GetType() | cardbandits.so
+EventO::EventO() | cardbandits.so
+EventO::~EventO() | cardbandits.so
+Sprite::DoNextFrame() | cardbandits.so
+Sprite::AssignString(String*, unsigned long) | cardbandits.so
+Sprite::ClicksEnabled | cardbandits.so
+Sprite::DeleteAfterLast(unsigned long) | cardbandits.so
+Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | cardbandits.so
+Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | cardbandits.so
+Sprite::Curve(int, int, int, int, int, int, int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | cardbandits.so
+Sprite::Reset() | cardbandits.so
+Sprite::DoDraw() | cardbandits.so
+Sprite::Enable(unsigned long) | cardbandits.so
+Sprite::FadeIn(unsigned long, unsigned long, int, int) | cardbandits.so
+Sprite::SetBmp(Bitmap*, unsigned long) | cardbandits.so
+Sprite::Signal(Group::SpriteSignalType) | cardbandits.so
+Sprite::Signal(SpriteSignal*) | cardbandits.so
+Sprite::Disable(unsigned long, bool) | cardbandits.so
+Sprite::FadeOut(unsigned long, unsigned long, int, int) | cardbandits.so
+Sprite::Message(Group::SpriteSignalType) | cardbandits.so
+Sprite::Message(SpriteSignal*) | cardbandits.so
+Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | cardbandits.so
+Sprite::SetCord(float, float, float, unsigned long) | cardbandits.so
+Sprite::SetSize(int, int) | cardbandits.so
+Sprite::DoCommand(int) | cardbandits.so
+Sprite::PlaySound(char*, int, unsigned long) | cardbandits.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | cardbandits.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | cardbandits.so
+Sprite::~Sprite() | cardbandits.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | cardbandits.so
+Settings::Init() | cardbandits.so
+Settings::Load() | cardbandits.so
+Settings::Cleanup() | cardbandits.so
+Settings::Restore(abstract_xml_record const*) | cardbandits.so
+Settings::Settings(char const*, unsigned int) | cardbandits.so
+Settings::~Settings() | cardbandits.so
+GameClass::GameClass() | cardbandits.so
+GameClass::~GameClass() | cardbandits.so
+xml_gamerandom::PICRAND_record::operator!=(xml_gamerandom::PICRAND_record const&) const | cardbandits.so
+Settings::Key(unsigned int, bool) const | cardbandits.so
+typeinfo for abstract_record | cardbandits.so
+typeinfo for abstract_xml_record | cardbandits.so
+typeinfo for EventO | cardbandits.so
+typeinfo for Sprite | cardbandits.so
+typeinfo for Settings | cardbandits.so
+typeinfo for GameClass | cardbandits.so
+typeinfo for xml_gamerandom::PICRAND_record | cardbandits.so
+vtable for DOSLinuxWorld | cardbandits.so
+blit | cardbandits.so
+clear_bitmap | cardbandits.so
+gfx_driver | cardbandits.so
+screen | cardbandits.so
+set_palette | cardbandits.so
+voice_ramp_volume | cardbandits.so
